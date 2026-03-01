@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Blossom Books</title>
+    <meta name="description"
+        content="Browse our full collection of fiction, poetry, self-help, and more at Blossom Books." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo"><span>🌸</span> Blossom Books</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="cart-icon" id="cartIcon">
+                🛒 <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ===== SHOP HEADER ===== -->
+    <section class="hero" style="min-height:35vh;padding:3rem 2rem">
+        <div class="hero-content fade-in">
+            <h1>Our <em>Collection</em></h1>
+            <p>Explore every title we carry — fiction, poetry, mystery, self-help &amp; more.</p>
+        </div>
+    </section>
+
+    <!-- ===== BOOK GRID ===== -->
+    <section class="section" id="shopGrid">
+        <h2 class="section-title fade-in">All Books</h2>
+        <p class="section-subtitle fade-in">Click "Add to Cart" to start building your reading list</p>
+
+        <div class="books-grid">
+            <!-- 1 -->
+            <article class="book-card fade-in">
+                <img src="images/book1.png" alt="Whispers of the Heart" class="cover" />
+                <div class="info">
+                    <h3>Whispers of the Heart</h3>
+                    <p class="author">by Clara Bennett</p>
+                    <p class="price">$14.99</p>
+                    <button class="btn btn-primary add-to-cart" data-name="Whispers of the Heart">Add to Cart</button>
+                </div>
+            </article>
+            <!-- 2 -->
+            <article class="book-card fade-in">
+                <img src="images/book2.png" alt="The Enchanted Garden" class="cover" />
+                <div class="info">
+                    <h3>The Enchanted Garden</h3>
+                    <p class="author">by Iris Delacroix</p>
+                    <p class="price">$16.99</p>
+                    <button class="btn btn-primary add-to-cart" data-name="The Enchanted Garden">Add to Cart</button>
+                </div>
+            </article>
+            <!-- 3 -->
+            <article class="book-card fade-in">
+                <img src="images/book3.png" alt="Midnight Bloom" class="cover" />
+                <div class="info">
+                    <h3>Midnight Bloom</h3>
+                    <p class="author">by Julian Voss</p>
+                    <p class="price">$13.49</p>
+                    <button class="btn btn-primary add-to-cart" data-name="Midnight Bloom">Add to Cart</button>
+                </div>
+            </article>
+            <!-- 4 -->
+            <article class="book-card fade-in">
+                <img src="images/book4.png" alt="Finding Your Light" class="cover" />
+                <div class="info">
+                    <h3>Finding Your Light</h3>
+                    <p class="author">by Maya Reeves</p>
+                    <p class="price">$12.99</p>
+                    <button class="btn btn-primary add-to-cart" data-name="Finding Your Light">Add to Cart</button>
+                </div>
+            </article>
+            <!-- 5 -->
+            <article class="book-card fade-in">
+                <img src="images/book5.png" alt="Letters to Autumn" class="cover" />
+                <div class="info">
+                    <h3>Letters to Autumn</h3>
+                    <p class="author">by Daniel Ashford</p>
+                    <p class="price">$15.49</p>
+                    <button class="btn btn-primary add-to-cart" data-name="Letters to Autumn">Add to Cart</button>
+                </div>
+            </article>
+            <!-- 6 -->
+            <article class="book-card fade-in">
+                <img src="images/book6.png" alt="Petals and Ink" class="cover" />
+                <div class="info">
+                    <h3>Petals and Ink</h3>
+                    <p class="author">by Sophie Laurent</p>
+                    <p class="price">$11.99</p>
+                    <button class="btn btn-primary add-to-cart" data-name="Petals and Ink">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="logo">🌸 Blossom Books</div>
+        <p>Stories that bloom, one page at a time.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="copy">&copy; 2026 Blossom Books. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast">Added to cart!</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
